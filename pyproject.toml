@@ -1,16 +1,30 @@
-[metadata]
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
 name = "snailpy"
-version = "0.0.4"
-author = "Nolan Simpson"
-author_email = "nmsderp@gmail.com"
-description = "Use the Snail IDE API in your Python programs."
-long_description = "file: README.md"
-long_description_content_type = "text/markdown"
-url = "https://github.com/Snail-IDE/SnailPy"
+description = "Use the Snail IDE API in Python!"
+requires-python = ">=3.7"
+license = {text = "GNU GPLv3"}
+authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
+keywords = ["python"]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Development Status :: 2 - Pre-Alpha",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
 ]
 
 [options]
