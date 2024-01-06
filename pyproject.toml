@@ -2,20 +2,20 @@
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[project]
+[tool.poetry]
 name = "snailpy"
-version = "0.0.13"
+version = "0.0.14"
 description = "A python package for interacting with Snail IDE's API features."
-long_description = """
-A python package for interacting with Snail IDE's API features.
-"""
 
+# Add these properties to the [tool.poetry] section
+long_description = """
+Write a detailed description of your project here using reStructuredText markup.
+"""
 long_description_content_type = "text/x-rst"
 
-requires-python = ">=3.7"
-license = {text = "GNU GPLv3"}
 authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
 keywords = ["python"]
+license = "GPL-3.0"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
