@@ -4,8 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "snailpy"
-version = "0.0.11"
+version = "0.0.12"
 description = "A python package for interacting with Snail IDE's API features."
+long_description = """
+A python package for interacting with Snail IDE's API features.
+"""
+
+long_description_content_type = "text/x-rst"
+
 requires-python = ">=3.7"
 license = {text = "GNU GPLv3"}
 authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
@@ -36,3 +42,7 @@ include_package_data = true
 [project_urls]
 docs = "https://example.com/docs"
 source = "https://github.com/example/snailpy"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
