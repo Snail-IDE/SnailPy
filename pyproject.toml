@@ -1,6 +1,18 @@
-[build-system]
-requires = [
-    "setuptools>=54",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+[metadata]
+name = snailpy
+version = 0.0.3
+author = Nolan Simpson 
+author_email = nmsderp@gmail.com
+description = Use the Snail IDE API in your python programs.
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/Snail-IDE/SnailPy
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+    Operating System :: OS Independent
+
+[options]
+packages = find:
+python_requires = >=3.7
+include_package_data = True
