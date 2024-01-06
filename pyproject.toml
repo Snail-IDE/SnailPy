@@ -4,13 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "snailpy"
-version = "0.0.9"
+version = "0.0.10"
 description = "A python package for interacting with Snail IDE's API features."
-long_description = """
-# SnailPy
-
-A python package for interacting with Snail IDE's API features.
-"""
 requires-python = ">=3.7"
 license = {text = "GNU GPLv3"}
 authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
