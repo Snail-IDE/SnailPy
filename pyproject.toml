@@ -31,3 +31,6 @@ classifiers = [
 packages = ["find"]
 python_requires = ">=3.7"
 include_package_data = true
+
+[project.files]
+readme = "README.md"
