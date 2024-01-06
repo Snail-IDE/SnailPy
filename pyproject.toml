@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "snailpy"
-version = "0.0.12"
+version = "0.0.13"
 description = "A python package for interacting with Snail IDE's API features."
 long_description = """
 A python package for interacting with Snail IDE's API features.
@@ -42,7 +42,3 @@ include_package_data = true
 [project_urls]
 docs = "https://example.com/docs"
 source = "https://github.com/example/snailpy"
-
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
