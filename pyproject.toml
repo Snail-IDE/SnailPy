@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "snailpy"
 description = "Use the Snail IDE API in Python!"
+
 requires-python = ">=3.7"
 license = {text = "GNU GPLv3"}
 authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
@@ -31,6 +32,3 @@ classifiers = [
 packages = ["find"]
 python_requires = ">=3.7"
 include_package_data = true
-
-[project.files]
-readme = "README.md"
