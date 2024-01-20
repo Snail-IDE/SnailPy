@@ -1,43 +1,40 @@
 [build-system]
-requires = ["setuptools>=61", "wheel"]
+requires = ["setuptools>=61", "wheel""]
 build-backend = "setuptools.build_meta"
 
-[tool.poetry]
+[project]
 name = "snailpy"
-version = "0.0.15"
-description = "A python package for interacting with Snail IDE's API features."
-
-long_description = """
-Write a detailed description of your project here using reStructuredText markup.
-"""
-long_description_content_type = "text/x-rst"
-
-authors = [{name = "nmsderp", email = "nmsderp@gmail.com"}]
-keywords = ["python"]
-license = "GPL-3.0"
+version = "0.0.16"
+dependencies = [
+  "requests",
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "Nolan Simpson", email = "nmsderp@gmail.com"},
+]
+maintainers = [
+  {name = "Nolan Simpson", email = "nmsderp@gmail.com"}
+]
+description = "Use the Snail IDE API in your python scripts."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["scratch", "api"]
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Natural Language :: English",
-    "Operating System :: MacOS",
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: Unix",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Internet",
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python"
 ]
 
-[options]
-packages = ["find"]
-python_requires = ">=3.7"
-include_package_data = true
 
-[project_urls]
-docs = "https://example.com/docs"
-source = "https://github.com/example/snailpy"
+[project.urls]
+Homepage = "https://snail-ide.js.org/SnailPy"
+Repository = "https://github.com/Snail-IDE/SnailPy.git"
+"Bug Tracker" = "https://github.com/Snail-IDE/SnailPy/issues"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
