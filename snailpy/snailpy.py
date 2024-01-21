@@ -1,10 +1,13 @@
 import requests
 
+# This will be changed when we get the new server
+api_url = 'https://snailshare-backend.glitch.me'
+
 def get_follower_count(username):
-    api_url = f'https://snailshare-backend.glitch.me/api/users/getFollowerCount?username={username}'
+    url = f'{api_url}/api/users/getFollowerCount?username={username}'
 
     try:
-        response = requests.get(api_url)
+        response = requests.get(url)
 
         if response.status_code == 200:
             follower_count = int(response.text)
@@ -17,10 +20,10 @@ def get_follower_count(username):
         return None
 
 def id_to_name(args):
-    api_url = f'https://snailshare-backend.glitch.me/api/pmWrapper/getProject?id={args["WHO"]}'
+    url = f'{api_url}/api/pmWrapper/getProject?id={args["WHO"]}'
 
     try:
-        response = requests.get(api_url)
+        response = requests.get(url)
 
         if response.status_code == 200:
             json_data = response.json()
@@ -32,10 +35,10 @@ def id_to_name(args):
         return ""
 
 def id_to_owner(args):
-    api_url = f'https://snailshare-backend.glitch.me/api/pmWrapper/getProject?id={args["WHO"]}'
+    url = f'{api_url}/api/pmWrapper/getProject?id={args["WHO"]}'
 
     try:
-        response = requests.get(api_url)
+        response = requests.get(url)
 
         if response.status_code == 200:
             json_data = response.json()
