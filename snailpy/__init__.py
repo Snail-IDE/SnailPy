@@ -2,4 +2,4 @@
 
 from .snailpy import *
 
-print('You are succsfully using SnailPy v1.0.3!')
+print('You are succsfully using SnailPy v1.0.5!')
