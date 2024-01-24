@@ -3,6 +3,11 @@ import requests
 # This will be changed when we get the new server
 api_url = 'https://snailshare-backend.glitch.me'
 
+def customAPI(url):
+    global api_url
+    api_url = url
+    print(f'You are now using: {api_url}')
+
 def get_follower_count(username):
     url = f'{api_url}/api/users/getFollowerCount?username={username}'
 
