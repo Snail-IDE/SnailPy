@@ -1,7 +1,6 @@
 import requests
 
-# This will be changed when we get the new server
-api_url = 'https://snailshare-backend.glitch.me'
+api_url = 'https://snailshare.xyz'
 
 def customAPI(url):
     global api_url
