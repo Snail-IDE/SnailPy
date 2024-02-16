@@ -1,6 +1,6 @@
 import requests
 
-api_url = 'https://snailshare.xyz'
+api_url = 'https://projects.snail-ide.com'
 
 def customAPI(url):
     global api_url
