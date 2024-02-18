@@ -5,7 +5,7 @@ api_url = 'https://projects.snail-ide.com'
 def customAPI(url):
     global api_url
     api_url = url
-    print(f'You are now using: {api_url}')
+    print(f'You are now succesfully using: {api_url}')
 
 def get_follower_count(username):
     url = f'{api_url}/api/users/getFollowerCount?username={username}'
