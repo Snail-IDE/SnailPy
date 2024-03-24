@@ -37,6 +37,20 @@ def id_to_name(args):
     except Exception as e:
         print(f"An error occurred: {e}")
         return ""
+def id_to_icon(args):
+    url = f'{api_url}/api/pmWrapper/iconUrl?id={args["WHO"]}'
+
+    try:
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            json_data = response.json()
+            return json_data.get('name', '')
+        else:
+            return ""
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return ""
 
 def id_to_owner(args):
     url = f'{api_url}/api/pmWrapper/getProject?id={args["WHO"]}'
