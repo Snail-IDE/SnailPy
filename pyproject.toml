@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "snailpy"
-version = "1.0.9"
+version = "1.1.0"
 dependencies = [
   "requests",
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 authors = [
   {name = "Nolan Simpson", email = "nmsderp@gmail.com"},
 ]

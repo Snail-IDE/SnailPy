@@ -1,6 +1,7 @@
 import requests
 
-api_url = 'https://snailshare.xyz'
+v = "1.1.0"
+api_url = 'https://snailshare.dreamhosters.com'
 
 def customAPI(url):
     global api_url
@@ -66,3 +67,5 @@ def id_to_owner(args):
     except Exception as e:
         print(f"An error occurred: {e}")
         return ""
+ def version():
+    print(v)
